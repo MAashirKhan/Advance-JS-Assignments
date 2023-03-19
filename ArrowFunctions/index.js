@@ -1,20 +1,39 @@
+//Arrow Functions
+//Example 1
+// const sayHello = (name, greetings) => console.log(greetings + " " + name);
 
-this.test = "attached to the module";
+// sayHello('Aashir', 'Good Morning');
 
-var foo = {
-  test: "attached to an object"
-};
+//---------------------------------------
+//Example 2 //this return current object
+//---------------------------------------
 
-// a method to create methods
-foo.method = function(name, cb){
-  this[name] = cb;
-};
+// const Person = {
+//   name: "Aashir",
+//   role: "DevOps Engineer",
+//   age: 22,
+//   showDetails: function(){
+//     console.log(`My name is ${this.name}`)
+//   }
+// }
 
-// use standard callback function and get
-// the expected "this"
-foo.method("bar", function(){
-  // this one will be what you expected
-  console.log(this.test); 
-});
+// Person.showDetails();
 
-foo.bar(); // => "attached to an object"
+
+//---------------------------------
+//Example 3: Lexical Scope
+//---------------------------------
+
+// const Person = {
+//   name: "Aashir",
+//   role: "DevOps Engineer",
+//   age: 22,
+//   showDetails: function(){
+//     console.log(this.name);
+//     setTimeout(function(){
+//       console.log(`My name is ${this.name} \nRole is ${this.role}`)      
+//     }, 2000);
+//   }
+// }
+
+// Person.showDetails();

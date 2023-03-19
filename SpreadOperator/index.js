@@ -11,7 +11,7 @@ console.log(arr)
 // Examples 2
 
 
-let obj = {name: "ameen", age: 20}
+let obj = {name: "aashir", age: 20}
 let obj2 = { designation: "DevOps Engineer" }
 let obj3 = {...obj, ...obj2}
 console.log(obj)
