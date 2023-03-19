@@ -1,6 +1,9 @@
 //Arrow Functions
 //Example 1
-// const sayHello = (name, greetings) => console.log(greetings + " " + name);
+
+// const sayHello = (name, greetings) => {
+//     console.log(greetings + " " + name);
+// }
 
 // sayHello('Aashir', 'Good Morning');
 
@@ -29,8 +32,8 @@
 //   role: "DevOps Engineer",
 //   age: 22,
 //   showDetails: function(){
-//     console.log(this.name);
-//     setTimeout(function(){
+//     console.log(this);
+//     setTimeout(() => {
 //       console.log(`My name is ${this.name} \nRole is ${this.role}`)      
 //     }, 2000);
 //   }

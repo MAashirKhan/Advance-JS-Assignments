@@ -1,15 +1,15 @@
 // -----------------------------------------
 // Example
-function init() {
-    var name = "Mozilla"; // name is a local variable created by init
-    function displayName() {
-      // displayName() is the inner function, that forms the closure
-      name = "Brave"
-      console.log(name); // use variable declared in the parent function
-    }
-    displayName();
-  }
-  init();
+// function init() {
+//     var name = "Mozilla"; // name is a local variable created by init
+//     function displayName() {
+//       // displayName() is the inner function, that forms the closure
+//       name = "Brave"
+//       console.log(name); // use variable declared in the parent function
+//     }
+//     displayName();
+//   }
+//   init();
   
 // ----------------------------------------
 //  Example 
@@ -25,9 +25,10 @@ function init() {
 // }
 
 // var myContor = buildContor(1);
-// myContor(); // 1
-// myContor(); // 2
-// myContor(); // 3
+// myContor();
+// myContor();
+// myContor();
+
 
 // // new closure - new outer scope - new contor variable
 // var myOtherContor = buildContor(10);

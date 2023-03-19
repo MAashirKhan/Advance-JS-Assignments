@@ -2,16 +2,16 @@
 // --------------------------
 // Example 1
 
-let x = 1;
+// let x = 1;
 
-if (x === 1) {
-  let x = 2;
+// if (x === 1) {
+//   let x = 2;
 
-  console.log(x);
-  // expected output: 2
-}
+//   console.log(x);
+//   // expected output: 2
+// }
 
-console.log(x);
+// console.log(x);
 // expected output: 1
 
 
@@ -19,16 +19,16 @@ console.log(x);
 // --------------------------
 // Example 2
 
-let x = 1;
+// let x = 1;
 
-if (x === 1) {
-  let x = 2;
+// if (x === 1) {
+//   let x = 2;
 
-  console.log(x);
-  // expected output: 2
-}
+//   console.log(x);
+//   // expected output: 2
+// }
 
-console.log(x);
+// console.log(x);
 // expected output: 1
 
 
@@ -36,10 +36,10 @@ console.log(x);
 // --------------------------
 // Example 3
 
-var x = 'global';
-let y = 'global';
-console.log(this.x); // "global"
-console.log(this.y); // undefined
+// var x = 'global';
+// let y = 'global';
+// console.log(this.x); // "global"
+// console.log(this.y); // undefined
 
 
 
@@ -47,118 +47,118 @@ console.log(this.y); // undefined
 // Example 4
 
 
-if (x) {
-    let foo;
-    let foo; // SyntaxError thrown.
-  }
+// if (x) {
+//     let foo;
+//     let foo; // SyntaxError thrown.
+//  }
 
 // --------------------------
 // Example 5
 
-let x = 1;
-switch(x) {
-  case 0:
-    let foo;
-    break;
+// let x = 1;
+// switch(x) {
+//   case 0:
+//     let foo;
+//     break;
     
-  case 1:
-    let foo; // SyntaxError for redeclaration.
-    break;
-}
+//   case 1:
+//     let foo; // SyntaxError for redeclaration.
+//     break;
+// }
 
 
 // --------------------------
 // Example 6
 
-let x = 1;
+// let x = 1;
 
-switch(x) {
-  case 0: {
-    let foo;
-    break;
-  }  
-  case 1: {
-    let foo;
-    break;
-  }
-}
+// switch(x) {
+//   case 0: {
+//     let foo;
+//     break;
+//   }  
+//   case 1: {
+//     let foo;
+//     break;
+//   }
+// }
 
 
 // --------------------------
 // Example 7
 
-function do_something() {
-    console.log(bar); // undefined
-    console.log(foo); // ReferenceError
-    var bar = 1;
-    let foo = 2;
-  }
+// function do_something() {
+//     console.log(bar); // undefined
+//     console.log(foo); // ReferenceError
+//     var bar = 1;
+//     let foo = 2;
+//   }
 
 
 // --------------------------
 // Example 8
 
 // prints out 'undefined'
-console.log(typeof undeclaredVariable);
+// console.log(typeof undeclaredVariable);
 
-// results in a 'ReferenceError'
-console.log(typeof i);
-let i = 10;
+// // results in a 'ReferenceError'
+// console.log(typeof i);
+// let i = 10;
 
 
 // --------------------------
 // Example 9
 
-function test(){
-    var foo = 33;
-    if(foo) {
-       let foo = (foo + 55); // ReferenceError
-    }
- }
- test();
+// function test(){
+//     var foo = 33;
+//     if(foo) {
+//        let foo = (foo + 55); // ReferenceError
+//     }
+//  }
+//  test();
 
 
 // --------------------------
 // Example 10
 
-function go(n) {
-    // n here is defined!
-    console.log(n); // Object {a: [1,2,3]}
+// function go(n) {
+//     // n here is defined!
+//     console.log(n); // Object {a: [1,2,3]}
   
-    for (let n of n.a) { // ReferenceError
-      console.log(n);
-    }
-  }
+//     for (let n of n.a) { // ReferenceError
+//       console.log(n);
+//     }
+//   }
   
-  go({a: [1, 2, 3]});
+//   go({a: [1, 2, 3]});
 
 
 // --------------------------
 // Example 11
 
-var a = 1;
-var b = 2;
+// var a = 1;
+// var b = 2;
 
-if (a === 1) {
-  var a = 11; // the scope is global
-  let b = 22; // the scope is inside the if-block
+// if (a === 1) {
+//   var a = 11; // the scope is global
+//   let b = 22; // the scope is inside the if-block
 
-  console.log(a);  // 11
-  console.log(b);  // 22
-} 
+//   console.log(a);  // 11
+//   console.log(b);  // 22
+// } 
 
-console.log(a); // 11
-console.log(b); // 2
+// console.log(a); // 11
+// console.log(b); // 2
 
 
 // --------------------------
 // Example 12
 
-let x = 1;
+// let x = 1;
 
-{
-  var x = 2; // SyntaxError for re-declaration
-}
+// {
+//   var x = 2; // SyntaxError for re-declaration
+// }
 
 
 
@@ -169,39 +169,39 @@ let x = 1;
 // --------------------------
 // Example 13
 
-var Thing;
+// var Thing;
 
-{
-  let privateScope = new WeakMap();
-  let counter = 0;
+// {
+//   let privateScope = new WeakMap();
+//   let counter = 0;
 
-  Thing = function() {
-    this.someProperty = 'foo';
+//   Thing = function() {
+//     this.someProperty = 'foo';
     
-    privateScope.set(this, {
-      hidden: ++counter,
-    });
-  };
+//     privateScope.set(this, {
+//       hidden: ++counter,
+//     });
+//   };
 
-  Thing.prototype.showPublic = function() {
-    return this.someProperty;
-  };
+//   Thing.prototype.showPublic = function() {
+//     return this.someProperty;
+//   };
 
-  Thing.prototype.showPrivate = function() {
-    return privateScope.get(this).hidden;
-  };
-}
+//   Thing.prototype.showPrivate = function() {
+//     return privateScope.get(this).hidden;
+//   };
+// }
 
-console.log(typeof privateScope);
+// console.log(typeof privateScope);
 // "undefined"
 
-var thing = new Thing();
+// var thing = new Thing();
 
-console.log(thing);
+// console.log(thing);
 // Thing {someProperty: "foo"}
 
-thing.showPublic();
+// thing.showPublic();
 // "foo"
 
-thing.showPrivate();
+//thing.showPrivate();
 // 1

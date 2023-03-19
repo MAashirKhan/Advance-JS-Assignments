@@ -1,25 +1,25 @@
 // ******************
 // Examples 1
 
-var a = `Template Literals`
-console.log(a)
+// var a = `Template Literals`
+// console.log(a)
 
 
 // ******************
 // Examples 2
 
-var longText = `Lorem ipsum dolor sit amet 
- consectetur adipisicing elit.
-Quas assumenda laboriosam accusamus. Dolorem nemo error, dicta corrupti sit     repellendus, iste blanditiis assumenda maiores dolorum, voluptatem quibusdam
-modi         consequatur    illo
-vitae!`
-console.log(longText)
+// var longText = `Lorem ipsum dolor sit amet 
+//  consectetur adipisicing elit.
+// Quas assumenda laboriosam accusamus. Dolorem nemo error, dicta corrupti sit     repellendus, iste blanditiis assumenda maiores dolorum, voluptatem quibusdam
+// modi         consequatur    illo
+// vitae!`
+// console.log(longText)
 
 
 // ******************
 // Examples 3
 
-var firstName = "Aashir"
-var designation = "DevOps Engineer"
-var description = `My Name is ${firstName}, i am ${designation} at Panacloud`
-console.log(description)
+// var firstName = "Aashir"
+// var designation = "DevOps Engineer"
+// var description = `My Name is ${firstName}, I am ${designation} at Panacloud`
+// console.log(description)
