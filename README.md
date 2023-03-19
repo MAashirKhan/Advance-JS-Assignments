@@ -1,8 +1,8 @@
-# PIAIC Advance JS Assignments
+# Advance JS Assignments
 
-PIAIC Advance JavaScript Assignments
+Advance JavaScript Assignments
 
-Advance JS Slides By [```Sir Daniyal Nagori``` ](https://docs.google.com/presentation/d/1scEVd9pD5eqw-0SBRTLwhxB0v2DzfIsWGzDPlVS7eqI/edit?usp=sharing)
+ [```Advance JS Slides``` ](https://docs.google.com/presentation/d/1scEVd9pD5eqw-0SBRTLwhxB0v2DzfIsWGzDPlVS7eqI/edit?usp=sharing)
 
 #### Contents:
   1. [String](String/README.md)
@@ -28,23 +28,3 @@ Advance JS Slides By [```Sir Daniyal Nagori``` ](https://docs.google.com/present
   <!-- 16. [](/README.md) -->
   <!-- 16. [](/README.md) -->
   <!-- 16. [](/README.md) -->
-  
-
-#### Announcement:-
-
-All the assignments you complete in the zoom lecture... Upload your all assignments in a single Github repository. **Attach a GitHub link to the form only once.**
-
-
-Create a Github repo with the name of "**PIAIC-Advance-JS-Assignment**"
-Commit and push all assignments in the **PIAIC-Advance-JS-Assignment** repository
-
-
-
-**Note:** Submit a link to your GitHub repo here only once, you will perform all the remaining assignments in the same repo, we will monitor your repository **every week**.
-In the repository, you will create folders in the sequence, e.g.
-1- Template-Literals
-2- Todo-app,
-3- Form,
-4- etc...
-
-
